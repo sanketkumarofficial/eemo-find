@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>@yield('title') · Eemo-Find</title>@include('layouts.assets')</head>
+<body class="auth-shell">
+<div class="auth-story"><x-brand /><div class="auth-story-content"><span class="eyebrow">YOUR ADMIN WORKSPACE</span><h1>Everything you need.<br><span>One secure space.</span></h1><p>Your profile, your activity, your security.<br>A focused workspace for Eemo-Find administrators.</p><div class="auth-visual" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="vault"><x-icon name="shield" /></span><span class="visual-tag tag-one"><x-icon name="lock" /> Protected access</span><span class="visual-tag tag-two"><span class="status-dot"></span> Your workspace, secured</span></div></div><div class="auth-story-footer">Eemo-Find <span>Built for administrators.</span></div></div>
+<main class="auth-main" id="main"><div class="auth-mobile-brand"><x-brand /></div><div class="auth-form"><span class="tile-icon"><x-icon name="lock" /></span>@yield('content')<div class="auth-restriction"><x-icon name="shield" /><span>This workspace is for authorized administrators only.<br>Contact your administrator if you need access.</span></div></div><footer>© {{ now()->year }} Eemo-Find. All rights reserved.</footer></main>
+</body></html>
